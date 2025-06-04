@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dự Báo Thời Tiết</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-blue-50 min-h-screen flex items-center justify-center p-4">
+  <div class="bg-white p-8 rounded-lg shadow-md max-w-md w-full">
+    <h1 class="text-3xl font-bold mb-6 text-center text-blue-700">Weather App</h1>
+    <div class="flex mb-4">
+      <input
+        type="text"
+        id="cityInput"
+        placeholder="Nhập Tên Thành Phố"
+        class="flex-grow border border-gray-300 rounded-l-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+      >
+      <button
+        id="searchBtn"
+        class="bg-blue-600 text-white px-4 rounded-r-md hover:bg-blue-700 transition"
+      >
+        Tìm kiếm
+      </button>
+    </div>
+    <div class="grid grid-cols-2 gap-4 text-center text-gray-700">
+      <div>
+        <div class="font-semibold">Thành phố</div>
+        <div id="result" class="text-lg font-bold text-blue-600"></div>
+      </div>
+      <div>
+        <div class="font-semibold">Độ Ẩm</div>
+        <div id="humidity" class="text-lg font-bold text-blue-600"></div>
+      </div>
+      <div>
+        <div class="font-semibold">Tốc Độ Gió</div>
+        <div id="wind" class="text-lg font-bold text-blue-600"></div>
+      </div>
+      <div>
+        <div class="font-semibold">Áp Suất</div>
+        <div id="pressure" class="text-lg font-bold text-blue-600"></div>
+      </div>
+    </div>
+    <div id="errorMsg" class="mt-4 text-red-600 font-semibold"></div>
+  </div>
+  <script src="/js/script.js"></script>
+</body>
+</html>
